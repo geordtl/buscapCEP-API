@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>VIACEP</title>
+</head>
+
+<body>
+    <section class="container"> 
+
+        <h1> Pesquise no VIACEP.</h1>
+        <div class="square" id="idsq">
+            
+            <button class="circle" id="searchCep" onClick="buscarCep()">
+                <img src="search-location.svg" alt="icon-search" class="search">
+            </button>
+            <form action="submit" id="formId">
+                <input type="text" name="cep" id="campoCep" class="inputClass" placeholder="Informe o CEP" minlength="8" maxlength="8">
+            </form>
+            
+            <div>
+                <p>Rua:</p>
+                <input type="text" name="rua" id="rua" >
+            </div>
+
+            <div>
+                <p>Bairro:</p>
+                <input type="text" name="bairro" id="bairro" >
+            </div>
+
+            <div>
+                <p>Cidade:</p>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+
+            <div>
+                <p>UF:</p>
+                <input type="text" name="uf" id="uf">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
