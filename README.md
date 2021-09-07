@@ -1,5 +1,5 @@
 # buscaCEP-API
-page link: https://geordtl.github.io/buscaCEP-API/
+page link: https://geordtl.github.io/buscapCEP-API/
 
 📍Olá!
 
