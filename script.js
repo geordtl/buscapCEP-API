@@ -2,7 +2,7 @@ const buscarCep = () => {
 
     const cepDigitado = document.getElementById('campoCep').value
 
-    axios.get(`https:viacep.com.br/ws/${cepDigitado}/json/`).then((response) => {
+    axios.get(`https://viacep.com.br/ws/${cepDigitado}/json/`).then((response) => {
         const resAPI = response.data
 
         document.getElementById('rua').value = resAPI.logradouro
